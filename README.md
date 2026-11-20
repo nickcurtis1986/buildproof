@@ -23,7 +23,7 @@ Stack: Next.js 16 (App Router) + TypeScript + Tailwind CSS 4, Supabase (database
 ## 2. Create the Supabase project (once, ~10 minutes)
 
 1. Go to https://supabase.com → sign up → **New project**. Pick a region near you (East US). Save the database password somewhere safe.
-2. When it finishes, open **SQL Editor** → **New query**. Open `supabase/migrations/001_init.sql` from this project in Notepad, copy everything, paste it in, and press **Run**. You should see "Success".
+2. When it finishes, open **SQL Editor** → **New query**. Open `supabase/migrations/001_init.sql` from this project in Notepad, copy everything, paste it in, and press **Run**. You should see "Success". Then do the same with `supabase/migrations/002_grants.sql`.
 3. **Login settings** → *Authentication* → *URL Configuration*:
    - Site URL: `http://localhost:3000` (change to your Vercel address later)
    - Redirect URLs: add `http://localhost:3000/auth/callback` (and later `https://YOUR-SITE.vercel.app/auth/callback`)
